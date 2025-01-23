@@ -247,11 +247,12 @@ header .logo a:hover {
 .newsletter-section {
     display: flex;
     justify-content: space-between;
-    padding: 40px 60px;
-    gap: 80px;
-    align-items: flex-start;
+    padding: 40px 50px;
+    gap: 40px;
+    align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    flex-wrap: nowrap;
 }
 
 .newsletter-content {
@@ -274,13 +275,12 @@ header .logo a:hover {
 .newsletter-box {
     width: 100%;
     height: 350px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     border: 2px black;
-    
 }
 
 .newsletter-box img {
@@ -290,7 +290,7 @@ header .logo a:hover {
 }
 
 p .description {
-    font-size: 18px;
+    font-size: 20px;
     color: black;
     line-height: 1.8;
     margin-top: 10px;
@@ -299,15 +299,15 @@ p .description {
 .contact-form {
     width: 45%;
     background-color: #f9f9f9;
-    padding: 30px;
+    padding: 40px;
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
 }
 
 .form-description {
-    font-size: 16px;
-    color: #555;
+    font-size: 22px;
+    color: black;
     margin-bottom: 20px;
     line-height: 1.4;
 }
@@ -400,4 +400,264 @@ input.name-input::before, input.email-input::before, input.phone-input::before {
     color: black;
     border-radius: 2px;
 }
+
+/*
+@media screen and (max-width: 768px) {
+    .navigation ul {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 1000;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .mobile-menu:hover {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+    }
+}
+*/
+@media screen and (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-content .subtext {
+        font-size: 1.2rem;
+    }
+
+    .banner-content .intro {
+        font-size: 1rem;
+    }
+
+    .banner-content {
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        height: 300px
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-content .subtext {
+        font-size: 1rem;
+    }
+
+    .banner-content .intro {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post-container {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .post {
+        width: calc(45px - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newsletter-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter-content {
+         width: 100%;
+    }
+
+    .newsletter-box {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+/* -- Blog Page -- */
+
+/* Blog Featured Banner */
+.blog-featured-banner {
+    background-image: url('lion.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-featured-content {
+    max-width: 600px;
+}
+
+.blog-featured-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.blog-featured-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.blog-featured-intro {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.blog-cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.blog-cta-button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Blog Posts Section */
+.blog-latest-posts {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fdfbfb;
+}
+
+.blog-post-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.blog-post h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.blog-post-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog-post-btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Newsletter Section */
+.blog-newsletter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.blog-newsletter-box img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.blog-newsletter-content {
+    max-width: 600px;
+}
+
+.blog-newsletter-form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.blog-submit-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog-submit-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
 
