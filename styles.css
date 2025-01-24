@@ -401,6 +401,19 @@ input.name-input::before, input.email-input::before, input.phone-input::before {
     border-radius: 2px;
 }
 
+/* Contact Page */
+
+.contact-banner {
+
+}
+
+.map h2 {
+    text-align: center;
+}
+.map-background iframe {
+    width: 100%
+}
+
 /*
 @media screen and (max-width: 768px) {
     .navigation ul {
