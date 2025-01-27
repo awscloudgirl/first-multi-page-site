@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Poppins, Arial;
     box-sizing: border-box;
+    display: flexbox;
 }
 
 header {
@@ -139,6 +140,7 @@ header .logo a:hover {
     text-align: center;
     padding: 40px 20px;
     background-color: #fdfbfb;
+    flex-flow: column wrap;
 }
 
 .blog-posts h2 {
@@ -427,18 +429,184 @@ input.name-input::before, input.email-input::before, input.phone-input::before {
     font-size: 48px;
 }
 
+.contact-form-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+.contact-info-box {
+    width: 40%;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Poppins, Arial;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-size: 1rem
+    font-weight: 300;
+    line-height: 1.8;
+    font-family: Poppins, Arial;
+}
+
+.contact-form-container {
+    width: 50%;
+    background-color: white;
+    color: black;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .contact-form {
-
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.contact-banner {
-
+.contact-input {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    text-align: left;
+    justify-content: space-between;
 }
 
-.map h2 {
-    text-align: center;
+.contact-input label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
 }
+
+.contact-input input, .contact-input textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-input textarea {
+    resize: none;
+    font-family: Poppins, Arial;
+}
+
+.contact-input-button {
+    text-align: left;
+    margin-top: 14px;
+}
+
+.submit-button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    width: 50%;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.map {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    justify-content: center;
+}
+
+.map-background {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .map-background iframe {
-    width: 100%
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
 }
+
+.map-details {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: opx 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-details h2 {
+    font-family: Poppins, Arial;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.map-details p {
+    font-family: Poppins, Arial;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+}
+
+.map-title {
+    font-family: Poppins, Arial;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.map-address, .map-contact {
+    font-family: Poppins, Arial;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 1.5rem; 
+    color: #333; 
+    cursor: pointer; 
+}
+
+.social-icons i:hover {
+    color: #007BFF; 
+}
+
 
